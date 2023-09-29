@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Landing Project</title>
   </head>
+  <!-- The following section defines the styles for the HTML elements -->
   <style>
     * {
       margin: 0;
@@ -18,14 +19,12 @@
       background-color: #fdf8f5;
       color: #23120d;
     }
-
-    .text-right {
+    .text-right-2 {
       text-align: right;
     }
     .text-right3 {
       text-align: center;
     }
-
     h1,
     h2 {
       margin: 20px;
@@ -38,15 +37,13 @@
       padding: 0px 20px;
       text-decoration: none;
     }
-
     header,
     footer {
       height: 60px;
       width: 100%;
       line-height: 60px;
-      background-color: #23f6ba;
+      background-color: #c5ab17;
     }
-
     .textstyle {
       text-align: center;
     }
@@ -61,20 +58,16 @@
       position: fixed;
       border-bottom: #25e7b0;
     }
-
     img {
-      display: block;
-      font-weight: 0px;
-      width: 100%;
-      margin: 0px;
+      max-width: 100%;
+      height: auto;
     }
-
     form {
       margin: 0 auto;
       width: 280px;
-      padding: 30px;
-      border: 10px solid #ddaf94;
-      border-radius: 40px;
+      padding: 40px;
+      border: 10px solid #83614d;
+      border-radius: 50px;
     }
     .corporate {
       text-align: center;
@@ -93,7 +86,6 @@
       color: #fdf8f5;
       text-align: center;
     }
-
     input {
       box-sizing: border-box;
       width: 170px;
@@ -105,44 +97,60 @@
     }
   </style>
   <body>
+    <!-- The header section containing navigation links -->
     <header>
-      <nav class="text-right">
+      <nav class="text-right-2">
         <ul>
-          <li>Home</li>
-          <li><a href="#"></a>Service</li>
-          <li>Contact</li>
+          <li>HOME</li>
+          <li><a href="#"></a>SERVICE</li>
+          <li>CONTACT</li>
         </ul>
       </nav>
     </header>
-
+    <!-- The main content of the webpage -->
     <main>
-      <h1 class="textstyle">MY NEW MINI-PROJECT</h1>
-      <img src="./image/imag" alt="COMING SOON GRAPHIC" />
+      <h1 class="textstyle">MY NEW MINI-PROJECT TRAILER</h1>
+      <img
+        src="./image/csoon.jpg"
+        alt="COMING SOON GRAPHIC"
+        width="100%"
+        height="100%"
+      />
       <p class="eric-thomas">
-        "When you want to succeed as bad as you want to breathe, then you'll be
-        successful"
+        <b>
+          "When you want to succeed as bad as you want to breathe, then you'll
+          be successful"
+        </b>
       </p>
+      <br />
+      <!-- The contact form section -->
       <section id="contact">
         <h2 class="contactdata">Contact Me</h2>
         <form>
-          <ul>
-            <li>
-              <label id="textright" for="name"> Name:</label>
-              <input type="text" id="name" name="user-name" />
-            </li>
-            <li>
-              <label id="textright-1" for="email">Email:</label>
-              <input type="text" id="email" name="user-email" />
-            </li>
-          </ul>
+          <!-- Label for Name input field -->
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user-name" required /><br /><br />
+
+          <!-- Label for Email input field -->
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="user-email"
+            required
+          /><br /><br />
+
+          <!-- Submit button -->
           <div class="contactdata">
-            <button type="submit">SEND</button>
+            <button type="submit">Submit</button>
           </div>
         </form>
       </section>
     </main>
+    <!-- The footer section displaying the creator's information -->
     <footer class="text-right3">
-      Created by your Genius Web Developper Richard Mutunzi
+      Created by your Genius Web Developer Richard Mutunzi
     </footer>
   </body>
 </html>
+<!-- End of HTML document -->
